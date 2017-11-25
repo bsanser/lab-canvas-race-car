@@ -1,21 +1,7 @@
-window.onload = function() {
-  document.getElementById("start-button").onclick = function() {
-    startGame();
-  };
+function Road() {
+}
 
-  function startGame() {
-
-      draw();
-    // this.canvas = document.getElementById(canvasId);
-    // this.canvas.width="500";
-    // this.canvas.height="730";
-    // this.ctx = this.canvas.getContext('2d');
-
-  }
-
-  function draw() {
-  var canvas = document.getElementById('canvasId');
-  var ctx = canvas.getContext('2d');
+Road.prototype.draw = function() {
   ctx.fillStyle = "#2c9127";
   ctx.fillRect(0, 0, 37, 730);
   ctx.fillRect(427, 0, 37, 730);
@@ -46,14 +32,4 @@ window.onload = function() {
   ctx.fillRect(225, 620, 8, 29);
   ctx.fillRect(225, 673, 8, 29);
   ctx.fillRect(225, 726, 8, 29);
-
-
-
-
-  }
-
-
-
-
-
 };
